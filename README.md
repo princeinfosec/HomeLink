@@ -2,208 +2,241 @@
 
 # <span style="color:#F26B5E">⌂</span> HomeLink
 
-### **Verified stays. Direct conversations. Better living.**
+### A better way to find your next place.
 
-<p>A modern, responsive housing marketplace UI for discovering verified rentals, finding compatible roommates, and connecting directly with owners — with zero brokerage at its core.</p>
+**Verified rentals · Compatible roommates · Direct conversations**
 
-<p>
-  <img src="https://img.shields.io/badge/✨_Highlights-F26B5E?style=for-the-badge&labelColor=172033" alt="Highlights" />
-  <img src="https://img.shields.io/badge/🚀_Quick_Start-00A88E?style=for-the-badge&labelColor=172033" alt="Quick Start" />
-  <img src="https://img.shields.io/badge/🧭_Architecture-6C63FF?style=for-the-badge&labelColor=172033" alt="Architecture" />
-</p>
 
-<p>
-  <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white" alt="React 19" />
-  <img src="https://img.shields.io/badge/TypeScript-5.8-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/TanStack_Start-1.168-FF4154?style=flat-square" alt="TanStack Start" />
-  <img src="https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-</p>
-
-</div>
+<img src="https://img.shields.io/badge/React_19-172033?style=flat-square&logo=react&logoColor=61DAFB" alt="React 19" />
+<img src="https://img.shields.io/badge/TanStack_Start-172033?style=flat-square&logo=tanstack&logoColor=FF4154" alt="TanStack Start" />
+<img src="https://img.shields.io/badge/Vite-172033?style=flat-square&logo=vite&logoColor=646CFF" alt="Vite" />
+<img src="https://img.shields.io/badge/Tailwind_CSS_4-172033?style=flat-square&logo=tailwindcss&logoColor=06B6D4" alt="Tailwind CSS 4" /> </div>
 
 ---
 
-## 🏡 About HomeLink
+## The idea
 
-**HomeLink** is a warm, trustworthy and mobile-friendly housing marketplace experience designed for students, professionals, families and property owners.
+Home hunting should not feel like sorting through noise.
 
-The interface combines a calm ivory canvas, deep ink typography, HomeLink coral actions, sage verification accents and compact marketplace workflows to make finding a home feel simple and human.
+**HomeLink** is a polished housing marketplace UI built around a simple promise: make it easier for students, professionals, families and property owners to find the right fit — without hiding the useful details or getting in the way of a direct conversation.
+
+The experience is intentionally warm and practical. It uses a quiet ivory background, deep ink text, coral actions and soft green verification cues so that listings stay easy to scan and trustworthy at a glance.
 
 > **Find a place that fits your life.**
 
-## ✨ Highlights
+## What is already here
 
-- **Verified rental discovery** — browse homes, apartments and stays with clear availability and verification signals.
-- **Roommate matching** — discover compatible flatmates, view profiles and send connection requests.
-- **Direct owner conversations** — chat with owners or potential roommates without unnecessary brokerage friction.
-- **Smart search experience** — location-aware search, filters, intent tabs and AI-assisted search flows.
-- **Property comparison** — save multiple properties and compare them side by side.
-- **Save and revisit** — bookmark properties and roommates for later.
-- **Owner tools** — list a property, manage listings, update rental status and explore featured listing plans.
-- **Safety-first interactions** — report and block flows, safety guidance and trust-oriented UI patterns.
-- **Responsive by design** — editorial desktop layout with a focused mobile stream and sticky bottom navigation.
-- **Demo-ready fallback data** — explore the UI with local mock data when the backend is not connected.
+- **Rental discovery** with search, location selection, filters, availability and listing details
 
-## 🎨 Design direction
+- **Roommate discovery** with profiles, compatibility signals and connection requests
 
-| Area | HomeLink approach |
-| --- | --- |
-| **Visual language** | Warm editorial marketplace with rounded cards, soft surfaces and compact information density |
-| **Brand color** | HomeLink Coral `#F26B5E` for primary actions and the signature location mark |
-| **Typography** | Manrope for UI text with a Georgia-style editorial fallback for display headings |
-| **Interaction** | Clear card targets, local save actions, compact secondary controls and short transitions |
-| **Responsive behavior** | Split discovery rail on desktop; single readable stream with bottom navigation on mobile |
-| **Accessibility intent** | Strong contrast, readable sizing and reduced-motion-friendly transitions |
+- **Direct chat** for conversations between owners, renters and potential roommates
 
-## 🚀 Quick start
+- **Saved items** for properties and roommate profiles worth coming back to
 
-### Prerequisites
+- **Property comparison** for making a confident shortlist
 
-- **Node.js 20+**
-- **pnpm** (recommended) or npm
-- An external HomeLink/NestJS API, if you want live data and authentication
+- **Owner workspace** for listing a property and managing its rental status
 
-### 1. Install dependencies
+- **Guided listing flow** for adding property details and photos
+
+- **Notifications** for messages, requests and account activity
+
+- **Safety tools** including report, block and safety guidance flows
+
+- **AI-ready interactions** for search, chat and photo verification
+
+- **Responsive layouts** that feel at home on both wide screens and small phones
+
+## A quick look at the visual language
+
+<div align="center">
+
+| HomeLink Coral | Deep Ink | Fresh Mint | Soft Ivory |
+| --- | --- | --- | --- |
+| <span style="color:#F26B5E">● `#F26B5E`</span> | <span style="color:#172033">● `#172033`</span> | <span style="color:#00A88E">● `#00A88E`</span> | <span style="color:#F9F8FC">● `#F9F8FC`</span> |
+| Primary actions | Headings and structure | Trust and status | The main canvas |
+
+</div>
+
+The UI uses **Manrope** for everyday interface text, with a restrained editorial serif fallback for larger display moments. Cards are rounded but not overly soft, spacing is compact, and the interface keeps secondary actions quiet so the important decisions stay prominent.
+
+## Get it running
+
+### Requirements
+
+- Node.js **20 or newer**
+
+- pnpm (recommended ) or npm
+
+- An external HomeLink/NestJS API for live authentication and data
+
+### Install
 
 ```bash
 pnpm install
 ```
 
-> With npm, use `npm install` instead.
+Using npm instead:
 
-### 2. Configure the API (optional)
-
-Create a `.env` file in the project root when connecting to a backend:
-
-```env
-VITE_API_URL=http://localhost:3000/api
+```bash
+npm install
 ```
 
-If `VITE_API_URL` is not provided, the frontend uses the relative `/api` path. The backend is **not included** in this package.
-
-### 3. Start development
+### Start locally
 
 ```bash
 pnpm dev
 ```
 
-Open the local URL shown by Vite in your browser.
+Vite will print the local URL in the terminal.
 
-### 4. Production build
+### Connect the API (optional)
+
+Create a `.env` file in the project root:
+
+```
+VITE_API_URL=http://localhost:3000/api
+```
+
+When this variable is not set, the frontend talks to the relative `/api` path and can still be explored with the included demo/fallback data.
+
+### Build for production
 
 ```bash
 pnpm build
 pnpm preview
 ```
 
-## 🧪 Quality checks
+## Useful commands
 
-```bash
-pnpm lint          # ESLint
-pnpm test          # Run Vitest once
-pnpm test:watch    # Vitest watch mode
-pnpm format        # Format source files
+| Command | Purpose |
+| --- | --- |
+| `pnpm dev` | Start the local development server |
+| `pnpm build` | Create a production build |
+| `pnpm preview` | Preview the production build |
+| `pnpm lint` | Run ESLint checks |
+| `pnpm test` | Run the Vitest suite once |
+| `pnpm test:watch` | Run Vitest in watch mode |
+| `pnpm format` | Format the project with Prettier |
+
+## How the app is organised
+
 ```
-
-## 🧭 Main user flows
-
-| Flow | What it covers |
-| --- | --- |
-| **Dashboard** | Featured stays, discovery cards, roommate suggestions and quick navigation |
-| **Rentals** | Search, browse, filter, view details and compare properties |
-| **Roommates** | Browse profiles, inspect compatibility and manage requests |
-| **Chat** | Conversations and direct messaging with owners or connections |
-| **Saved** | Saved properties and roommate profiles |
-| **Owner dashboard** | Manage listed properties and availability/status |
-| **List property** | Guided listing wizard with photo and detail workflows |
-| **Notifications** | Requests, messages and activity updates |
-| **Profile** | Account, preferences and session actions |
-| **Safety** | Trust, reporting and blocking experiences |
-
-## 🔌 Backend integration
-
-The frontend API boundary is centralized in [`src/homelink/services/api.js`](src/homelink/services/api.js). It supports authentication, properties, roommates, roommate requests, conversations, saved items, notifications, safety reports, blocking, AI search, AI chat and photo verification.
-
-### Session storage
-
-| Key | Purpose |
-| --- | --- |
-| `homelink_token` | Bearer access token used by the API client |
-| `homelink_user` | Current user session cached in the browser |
-| `homelink_user_location` | Selected location used by the UI |
-
-> **Important:** This repository contains the frontend only. The external backend should expose the API routes expected by `api.js` and handle authentication, validation, storage and authorization securely.
-
-## 🗂️ Project structure
-
-```text
 HomeLink/
-├── frontend/                 # Frontend guide
-├── backend/                  # External backend integration guide
-├── docs/                     # Architecture and project notes
-├── public/                   # Static assets and route manifest
 ├── src/
 │   ├── homelink/
-│   │   ├── components/       # Header, cards, modals, navigation and widgets
-│   │   ├── context/          # Shared app state and navigation
-│   │   ├── data/             # Demo and fallback data
-│   │   ├── services/          # API, AI and location service adapters
+│   │   ├── components/       # Cards, header, navigation, modals and widgets
+│   │   ├── context/          # Shared state, session and client navigation
+│   │   ├── data/             # Local demo and fallback data
+│   │   ├── services/         # API, AI and location service adapters
 │   │   ├── views/             # Dashboard, rentals, roommates, chat, profile, etc.
-│   │   ├── App.jsx            # Application shell and view orchestration
-│   │   └── styles.css         # Design tokens and responsive styles
+│   │   ├── App.jsx            # Persistent application shell
+│   │   └── styles.css         # Design tokens and responsive styling
 │   └── routes/                # TanStack route entry points
-├── package.json               # Scripts and dependencies
-├── vite.config.ts             # Vite/TanStack configuration
-└── tsconfig.json              # TypeScript configuration
+├── public/                   # Static files and route manifest
+├── frontend/                 # Frontend notes
+├── backend/                  # External API integration notes
+├── docs/                     # Project map and architecture notes
+├── package.json
+├── vite.config.ts
+└── tsconfig.json
 ```
 
-## 🧱 Tech stack
+The application shell lives in `src/homelink/App.jsx`. Views are loaded as needed, while `AppContext.jsx` keeps navigation, session state, saved items and demo behavior in one place. The route entry point is [`src/routes/index.tsx`](src/routes/index.tsx).
 
-- **React 19** — component-driven UI
-- **TanStack Start / TanStack Router** — application shell and routing
-- **TypeScript** — typed project configuration and route files
-- **Vite** — fast development and production bundling
-- **Tailwind CSS 4** — utility styling and design tokens
-- **Radix UI** — accessible interaction primitives
-- **Lucide React** — interface icons
-- **React Hook Form + Zod** — form handling and validation utilities
-- **Vitest + Testing Library** — testing foundation
+## Backend boundary
 
-## 🛠️ Customization guide
+The frontend keeps its network calls in [`src/homelink/services/api.js`](src/homelink/services/api.js), rather than scattering `fetch` calls across the UI. The client currently groups endpoints for:
 
-- Update brand tokens, colors and typography in [`src/styles.css`](src/styles.css).
-- Add or modify local demo content in [`src/homelink/data/`](src/homelink/data/).
-- Add reusable UI pieces in [`src/homelink/components/`](src/homelink/components/).
+- authentication and current-user sessions
+
+- property search, details, creation, status and photo upload
+
+- roommate search and status
+
+- roommate requests
+
+- conversations and messages
+
+- saved properties and roommates
+
+- notifications
+
+- reports and blocking
+
+- AI search, chat and photo verification
+
+The backend itself is **not part of this upload**. It needs to provide the routes expected by `api.js` and remain responsible for authentication, validation, authorization and persistence.
+
+### Browser session keys
+
+| Key | Stored value |
+| --- | --- |
+| `homelink_token` | Bearer access token |
+| `homelink_user` | Current user session |
+| `homelink_user_location` | Selected location preference |
+
+## Main screens
+
+| Screen | Role in the experience |
+| --- | --- |
+| Dashboard | A starting point for featured stays, discovery and suggestions |
+| Rentals | Search and browse available properties |
+| Rental detail | Inspect a property and start the next action |
+| Compare | Put shortlisted properties side by side |
+| Roommates | Browse compatible people and profiles |
+| Requests | Manage incoming and outgoing roommate connections |
+| Chat | Continue direct conversations |
+| Saved | Return to properties and people saved earlier |
+| Owner dashboard | Keep track of listed properties |
+| List property | Add a new property through a guided flow |
+| Notifications | See recent activity and updates |
+| Profile | Manage account details and preferences |
+| Safety | Access trust, reporting and blocking tools |
+
+## Customising the experience
+
+- Change colors, surfaces, typography and responsive primitives in [`src/styles.css`](src/styles.css).
+
+- Update demo listings and roommate data in [`src/homelink/data/`](src/homelink/data/).
+
+- Add reusable interface pieces in [`src/homelink/components/`](src/homelink/components/).
+
 - Add screen-level experiences in [`src/homelink/views/`](src/homelink/views/).
-- Keep backend calls inside [`src/homelink/services/`](src/homelink/services/) rather than calling `fetch` directly from views.
-- Use [`src/homelink/context/AppContext.jsx`](src/homelink/context/AppContext.jsx) for shared client state and navigation behavior.
 
-## 📚 Documentation
+- Keep API changes in [`src/homelink/services/`](src/homelink/services/).
+
+- Use [`src/homelink/context/AppContext.jsx`](src/homelink/context/AppContext.jsx) for shared client behavior.
+
+## Notes before shipping
+
+- The uploaded package contains the **frontend**, not the backend server.
+
+- Add a real API URL and authentication flow before using live user data.
+
+- Add a license file before distributing the project publicly.
+
+- Check the UI at both mobile and desktop widths whenever changing cards, navigation or modals.
+
+## Project notes
 
 - [Frontend guide](frontend/README.md)
+
 - [Backend integration notes](backend/README.md)
+
 - [Project structure](docs/PROJECT-STRUCTURE.md)
-- [HomeLink rebuild plan](plan.md)
 
-## 🤝 Contributing
-
-1. Create a feature branch.
-2. Keep UI changes responsive across desktop and mobile breakpoints.
-3. Reuse the existing design tokens and interaction patterns.
-4. Run `pnpm lint`, `pnpm test` and `pnpm build` before opening a pull request.
-5. Keep API integration changes centralized and document new environment variables.
-
-## 📄 License
-
-No license file is included in the uploaded package. Add a license before distributing or publishing the project.
+- [UI rebuild plan](plan.md)
 
 ---
 
 <div align="center">
 
-**Made for better homes, better matches and more direct connections.**
+**HomeLink**
 
-<span style="color:#F26B5E">●</span> <span style="color:#00A88E">●</span> <span style="color:#6C63FF">●</span>
+<span style="color:#F26B5E">●</span>  <span style="color:#00A88E">●</span>  <span style="color:#172033">●</span>
+
+*Made for better homes, better matches and more direct connections.*
 
 </div>
