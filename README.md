@@ -61,6 +61,32 @@ The experience is intentionally warm and practical. It uses a quiet ivory backgr
 
 The UI uses **Manrope** for everyday interface text, with a restrained editorial serif fallback for larger display moments. Cards are rounded but not overly soft, spacing is compact, and the interface keeps secondary actions quiet so the important decisions stay prominent.
 
+### Color options
+
+These are the core HomeLink color options. Use them consistently so the interface feels like one product instead of a collection of unrelated screens.
+
+| Option | Color | Where to use it | Example text |
+| --- | --- | --- | --- |
+| **HomeLink Coral** | <span style="color:#F26B5E">■ `#F26B5E`</span> | Main buttons, active states, location pin and important highlights | <span style="color:#F26B5E"><strong>List your property</strong></span> |
+| **Deep Ink** | <span style="color:#172033">■ `#172033`</span> | Page titles, navigation, prices and high-priority information | <span style="color:#172033"><strong>Find your next place</strong></span> |
+| **Fresh Mint** | <span style="color:#00A88E">■ `#00A88E`</span> | Verified labels, success states, availability and positive actions | <span style="color:#00A88E"><strong>Verified owner</strong></span> |
+| **Warm Amber** | <span style="color:#D68A25">■ `#D68A25`</span> | Featured tags, reminders and attention without an error state | <span style="color:#D68A25"><strong>Featured listing</strong></span> |
+| **Soft Lavender** | <span style="color:#6C63FF">■ `#6C63FF`</span> | AI features, smart suggestions and comparison accents | <span style="color:#6C63FF"><strong>Smart match</strong></span> |
+| **Soft Ivory** | <span style="color:#F9F8FC">■ `#F9F8FC`</span> | Main page canvas, spacious sections and quiet backgrounds | <span style="color:#596276"><strong>Comfortable browsing surface</strong></span> |
+
+#### Ready-to-use text styles
+
+```
+Primary action      → HomeLink Coral   #F26B5E
+Main heading        → Deep Ink          #172033
+Verified / success  → Fresh Mint       #00A88E
+Featured / notice   → Warm Amber       #D68A25
+AI / smart feature  → Soft Lavender    #6C63FF
+Page background     → Soft Ivory       #F9F8FC
+```
+
+> **Recommended balance:** keep Deep Ink and Soft Ivory dominant, use Coral for the action users should take next, and reserve Mint, Amber and Lavender for meaningful status—not decoration.
+
 ## Get it running
 
 ### Requirements
