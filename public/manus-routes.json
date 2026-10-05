@@ -1,0 +1,1 @@
+{ "routes": [{ "path": "/", "title": "HomeLink" }, { "path": "/admin", "title": "HomeLink Admin" }] }
